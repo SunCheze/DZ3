@@ -164,7 +164,7 @@ def scrape_books(start_page: int = 1, end_page: int = 50, save_to_file: bool = F
 
     # Сохранение в файл, если флаг установлен
     if save_to_file:
-        file_path = Path("books_data.txt")
+        file_path = Path("books_scraper/books_data.txt")
         try:
             with open(file_path, "w", encoding="utf-8") as f:
                 for i, book in enumerate(all_books, 1):
